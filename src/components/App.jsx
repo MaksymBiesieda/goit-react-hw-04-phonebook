@@ -45,7 +45,7 @@ export default function App () {
       <h1 className={css.title}>PhoneBook</h1>
         <ContactForm onFormSubmit={formSubmitHandler} contacts={contacts} />
         <h2 className={css.contacts_title}>Contacts</h2>
-        <Filter onFilterChange={filterHandler}/>
+        <Filter onFilterChange={filterHandler} filter={filter} />
         <ContactList  filterResult={filterResult} onDeleteContact={deleteContact} />
     </div> 
     )
